@@ -6,8 +6,8 @@ server:
 
 redis:
   host:
-    url: redis1-pe1.fct.me
-    port: 9001
+    url: 127.0.0.1
+    port: 6379
     test:
       onborrow: true
     password: admin
@@ -27,6 +27,6 @@ mongo:
 
 mysql:
   connection:
-    url: jdbc:mysql://localhost:3006/fct_core?useUnicode=true&characterEncoding=UTF8&autoReconnect=true&rewriteBatchedStatements=TRUE&zeroDateTimeBehavior=convertToNull
-    username: admin
-    password: admin
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF8&autoReconnect=true&rewriteBatchedStatements=TRUE&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 3202547c

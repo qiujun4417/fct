@@ -1,11 +1,14 @@
 package com.fct.api.config;
 
 
+import com.fct.data.mysql.config.JPAConfig;
+import com.fct.data.redis.RedisConfig;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
+import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.ImportResource;
 
 /**
@@ -14,6 +17,7 @@ import org.springframework.context.annotation.ImportResource;
  */
 @SpringBootApplication(scanBasePackages = "com.fct")
 @ImportResource({"classpath:dubbo/dubbo-consumer.xml"})
+@Import({RedisConfig.class, JPAConfig.class})
 public class ApplicationStartUp extends SpringBootServletInitializer {
 
     @Override
