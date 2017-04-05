@@ -24,7 +24,6 @@ public abstract class AbstractHeaderInterceptor implements HandlerInterceptor {
     public static final HeaderCode[] headers = new HeaderCode[]{
             new HeaderCode("app-version", 8),
             new HeaderCode("channel", 3),
-            new HeaderCode("model", 5),
             new HeaderCode("version", 1)
     };
 

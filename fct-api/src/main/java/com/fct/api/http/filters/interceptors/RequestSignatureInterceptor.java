@@ -48,7 +48,7 @@ public final class RequestSignatureInterceptor extends AbstractHeaderInterceptor
         String timestamp = request.getHeader("client-request-time");
         String headerStr = ServletAttributeCacheUtil.getHeaderStr(request);
         Session session = ServletAttributeCacheUtil.getSession(request, sessionUtil);
-        String secret = session == null ? "d72f89da-1763-4a0c-b577-1a20c9ee9825" : session.getSecret();
+        String secret = session == null ? "1200a3809c56463f92ab0a93f362325e" : session.getSecret();
         String prefix = "idon'tcarewhoyouarejustgodie!\n";
         String appSecret = "a9b5d0fb-409d-46d9-9c11-339fdc21e4ca";
         String parameterStr;
