@@ -5,18 +5,7 @@ import com.google.common.collect.ComparisonChain;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- * ░░░░░▄█▌▀▄▓▓▄▄▄▄▀▀▀▄▓▓▓▓▓▌█
- * ░░░▄█▀▀▄▓█▓▓▓▓▓▓▓▓▓▓▓▓▀░▓▌█
- * ░░█▀▄▓▓▓███▓▓▓███▓▓▓▄░░▄▓▐█▌
- * ░█▌▓▓▓▀▀▓▓▓▓███▓▓▓▓▓▓▓▄▀▓▓▐█
- * ▐█▐██▐░▄▓▓▓▓▓▀▄░▀▓▓▓▓▓▓▓▓▓▌█▌
- * █▌███▓▓▓▓▓▓▓▓▐░░▄▓▓███▓▓▓▄▀▐█
- * █▐█▓▀░░▀▓▓▓▓▓▓▓▓▓██████▓▓▓▓▐█
- * ▌▓▄▌▀░▀░▐▀█▄▓▓██████████▓▓▓▌█▌
- * ▌▓▓▓▄▄▀▀▓▓▓▀▓▓▓▓▓▓▓▓█▓█▓█▓▓▌█▌
- * █▐▓▓▓▓▓▓▄▄▄▓▓▓▓▓▓█▓█▓█▓█▓▓▓▐█
- * <p/>
- * Created by zhangzhixiu on 15/11/23.
+ * @author ningyang
  */
 public final class Version implements Comparable<Version> {
     int major;

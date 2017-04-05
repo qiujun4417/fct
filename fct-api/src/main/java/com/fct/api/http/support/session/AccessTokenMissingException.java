@@ -4,18 +4,7 @@ package com.fct.api.http.support.session;
 import com.fct.common.exceptions.BaseException;
 
 /**
- * ░░░░░▄█▌▀▄▓▓▄▄▄▄▀▀▀▄▓▓▓▓▓▌█
- * ░░░▄█▀▀▄▓█▓▓▓▓▓▓▓▓▓▓▓▓▀░▓▌█
- * ░░█▀▄▓▓▓███▓▓▓███▓▓▓▄░░▄▓▐█▌
- * ░█▌▓▓▓▀▀▓▓▓▓███▓▓▓▓▓▓▓▄▀▓▓▐█
- * ▐█▐██▐░▄▓▓▓▓▓▀▄░▀▓▓▓▓▓▓▓▓▓▌█▌
- * █▌███▓▓▓▓▓▓▓▓▐░░▄▓▓███▓▓▓▄▀▐█
- * █▐█▓▀░░▀▓▓▓▓▓▓▓▓▓██████▓▓▓▓▐█
- * ▌▓▄▌▀░▀░▐▀█▄▓▓██████████▓▓▓▌█▌
- * ▌▓▓▓▄▄▀▀▓▓▓▀▓▓▓▓▓▓▓▓█▓█▓█▓▓▌█▌
- * █▐▓▓▓▓▓▓▄▄▄▓▓▓▓▓▓█▓█▓█▓█▓▓▓▐█
- * <p/>
- * Created by zhangzhixiu on 15/11/26.
+ * @author ningyang
  */
 public final class AccessTokenMissingException extends BaseException {
 

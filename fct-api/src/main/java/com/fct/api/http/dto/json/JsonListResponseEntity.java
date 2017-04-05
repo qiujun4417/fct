@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by zhangzhixiu on 6/26/15.
+ * @author ningyang
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class JsonListResponseEntity<T> {

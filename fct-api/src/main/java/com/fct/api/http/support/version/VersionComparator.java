@@ -1,18 +1,7 @@
 package com.fct.api.http.support.version;
 
 /**
- * ░░░░░▄█▌▀▄▓▓▄▄▄▄▀▀▀▄▓▓▓▓▓▌█
- * ░░░▄█▀▀▄▓█▓▓▓▓▓▓▓▓▓▓▓▓▀░▓▌█
- * ░░█▀▄▓▓▓███▓▓▓███▓▓▓▄░░▄▓▐█▌
- * ░█▌▓▓▓▀▀▓▓▓▓███▓▓▓▓▓▓▓▄▀▓▓▐█
- * ▐█▐██▐░▄▓▓▓▓▓▀▄░▀▓▓▓▓▓▓▓▓▓▌█▌
- * █▌███▓▓▓▓▓▓▓▓▐░░▄▓▓███▓▓▓▄▀▐█
- * █▐█▓▀░░▀▓▓▓▓▓▓▓▓▓██████▓▓▓▓▐█
- * ▌▓▄▌▀░▀░▐▀█▄▓▓██████████▓▓▓▌█▌
- * ▌▓▓▓▄▄▀▀▓▓▓▀▓▓▓▓▓▓▓▓█▓█▓█▓▓▌█▌
- * █▐▓▓▓▓▓▓▄▄▄▓▓▓▓▓▓█▓█▓█▓█▓▓▓▐█
- * <p/>
- * Created by zhangzhixiu on 15/11/23.
+ * @author ningyang
  */
 public final class VersionComparator {
     public static boolean in(Version from, Version to, String version) {

@@ -3,8 +3,7 @@ package com.fct.api.utils;
 import java.lang.reflect.Method;
 
 /**
- * 链式调用，进行参数校验
- * @author jialing.yao  2016年5月12日
+ * @author ningyang
  */
 public class ParamChecker {
 	//构造实例

@@ -8,18 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * ░░░░░▄█▌▀▄▓▓▄▄▄▄▀▀▀▄▓▓▓▓▓▌█
- * ░░░▄█▀▀▄▓█▓▓▓▓▓▓▓▓▓▓▓▓▀░▓▌█
- * ░░█▀▄▓▓▓███▓▓▓███▓▓▓▄░░▄▓▐█▌
- * ░█▌▓▓▓▀▀▓▓▓▓███▓▓▓▓▓▓▓▄▀▓▓▐█
- * ▐█▐██▐░▄▓▓▓▓▓▀▄░▀▓▓▓▓▓▓▓▓▓▌█▌
- * █▌███▓▓▓▓▓▓▓▓▐░░▄▓▓███▓▓▓▄▀▐█
- * █▐█▓▀░░▀▓▓▓▓▓▓▓▓▓██████▓▓▓▓▐█
- * ▌▓▄▌▀░▀░▐▀█▄▓▓██████████▓▓▓▌█▌
- * ▌▓▓▓▄▄▀▀▓▓▓▀▓▓▓▓▓▓▓▓█▓█▓█▓▓▌█▌
- * █▐▓▓▓▓▓▓▄▄▄▓▓▓▓▓▓█▓█▓█▓█▓▓▓▐█
- * <p>
- * Created by zhangzhixiu on 16/4/20.
+ * @author ningyang
  */
 public final class RequestHeaderInterceptor extends AbstractHeaderInterceptor {
 

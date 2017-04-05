@@ -28,11 +28,8 @@ import javax.servlet.DispatcherType;
 import java.util.List;
 
 /**
- * all right reserved by nick and YIMIAO corp
  *
- * Web Config
- *
- * Created by nick on 16/05/20.
+ * @author ningyang
  */
 @Configuration
 @EnableWebMvc
@@ -46,8 +43,6 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 
     @Autowired
     private Environment environment;
-
-    private List<Object> interceptorLists;
 
     @Bean
     @Order(0)
@@ -65,7 +60,6 @@ public class WebConfig extends WebMvcConfigurerAdapter{
             interceptorList.add(new RequestReplayDefenderInterceptor(defender, isSandbox));
         }
         handlerMapping.setInterceptors(interceptorList.toArray());
-        this.interceptorLists = interceptorList;
         return handlerMapping;
     }
 
