@@ -11,5 +11,22 @@
 
     <artifactId>fct-services</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.fct</groupId>
+            <artifactId>fct-interfaces</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fct</groupId>
+            <artifactId>fct-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fct</groupId>
+            <artifactId>fct-data</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

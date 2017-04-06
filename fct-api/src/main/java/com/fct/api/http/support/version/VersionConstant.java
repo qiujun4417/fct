@@ -5,5 +5,5 @@ package com.fct.api.http.support.version;
  */
 public class VersionConstant {
     public static final String min = "1.0.0";
-    public static final String max = "1.4.0";
+    public static final String max = "1.0.0";
 }

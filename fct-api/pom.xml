@@ -63,7 +63,7 @@
         </dependency>
         <dependency>
             <groupId>com.fct</groupId>
-            <artifactId>fct-data</artifactId>
+            <artifactId>fct-services</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
