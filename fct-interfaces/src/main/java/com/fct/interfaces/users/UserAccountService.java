@@ -1,6 +1,6 @@
 package com.fct.interfaces.users;
 
-import com.fct.interfaces.dto.user.UserDto;
+import com.fct.data.mysql.entity.UserEntity;
 
 import java.util.List;
 
@@ -10,13 +10,13 @@ import java.util.List;
  */
 public interface UserAccountService {
 
-    boolean deleteUserAccount(UserDto user);
+    boolean deleteUserAccount(UserEntity user);
 
-    UserDto findUserById(String id);
+    UserEntity findUserById(String id);
 
-    List<UserDto> findUserByName(String name, int start, int size);
+    List<UserEntity> findUserByName(String name, int start, int size);
 
-    List<UserDto> findUserByName(String name);
+    List<UserEntity> findUserByName(String name);
 
-    UserDto createUser(UserDto userDto);
+    UserEntity createUser(UserEntity userDto);
 }

@@ -3,10 +3,7 @@ package com.fct.services.user;
 
 import com.fct.data.mysql.entity.UserEntity;
 import com.fct.data.mysql.repository.UserRepository;
-import com.fct.interfaces.dto.user.UserDto;
 import com.fct.interfaces.users.UserAccountService;
-import com.fct.services.utils.DaoDtoConvertor;
-import com.google.common.collect.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,43 +20,28 @@ public class UserServiceImpl implements UserAccountService{
     private UserRepository userRepository;
 
     @Override
-    public boolean deleteUserAccount(UserDto user) {
+    public boolean deleteUserAccount(UserEntity user) {
         userRepository.delete(user.getId());
         return true;
     }
 
     @Override
-    public UserDto findUserById(String id) {
-        return (UserDto) DaoDtoConvertor.dtoConvert(userRepository.findById(id));
+    public UserEntity findUserById(String id) {
+        return userRepository.findById(id);
     }
 
     @Override
-    public List<UserDto> findUserByName(String name, int start, int size) {
-        List<UserEntity> userEntities = userRepository.findUserByPage(name, start, size);
-        List<UserDto> userDtos = Lists.newArrayList();
-        for(UserEntity entity: userEntities){
-            UserDto dto = (UserDto)DaoDtoConvertor.dtoConvert(entity);
-            userDtos.add(dto);
-        }
-        return userDtos;
+    public List<UserEntity> findUserByName(String name, int start, int size) {
+        return userRepository.findUserByPage(name, start, size);
     }
 
     @Override
-    public List<UserDto> findUserByName(String name) {
-        List<UserEntity> userEntities = userRepository.findByName(name);
-        List<UserDto> userDtos = Lists.newArrayList();
-        for(UserEntity entity: userEntities){
-            UserDto dto = (UserDto)DaoDtoConvertor.dtoConvert(entity);
-            userDtos.add(dto);
-        }
-        return userDtos;
+    public List<UserEntity> findUserByName(String name) {
+        return userRepository.findByName(name);
     }
 
     @Override
-    public UserDto createUser(UserDto userDto) {
-        UserEntity userEntity = new UserEntity();
-        userEntity.setId(userDto.getId());
-        userEntity.setName(userDto.getName());
-        return (UserDto)DaoDtoConvertor.dtoConvert(userRepository.save(userEntity));
+    public UserEntity createUser(UserEntity user) {
+        return userRepository.save(user);
     }
 }
