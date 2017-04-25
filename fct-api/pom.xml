@@ -57,7 +57,7 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>fct</groupId>
+            <groupId>com.fct</groupId>
             <artifactId>fct-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
