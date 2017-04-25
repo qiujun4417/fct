@@ -2,6 +2,7 @@ package com.fct.data.mysql.entity;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import lombok.NonNull;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Entity;
@@ -23,6 +24,7 @@ public class UserEntity {
     @GenericGenerator(name="userIdGenerator",strategy = "uuid")
     private String id;
 
+    @NonNull
     private String name;
 
 }

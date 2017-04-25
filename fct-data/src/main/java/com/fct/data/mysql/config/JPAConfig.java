@@ -18,6 +18,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
+import java.math.BigDecimal;
 import java.sql.SQLException;
 import java.util.Properties;
 
@@ -93,5 +94,16 @@ public class JPAConfig {
     @Bean
     public JdbcTemplate jdbcTemplate(DataSource dataSource) {
         return new JdbcTemplate(dataSource);
+    }
+
+    public static void main(String[] args){
+        BigDecimal d1 = new BigDecimal(4);
+        if(d1.doubleValue()>0){
+            //do something
+            d1.subtract(new BigDecimal(3.4)); // -
+            d1.add(new BigDecimal(4.7)); // +
+            d1.divide(new BigDecimal(2)); // /
+            d1.multiply(new BigDecimal(4)); // *
+        }
     }
 }
