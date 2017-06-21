@@ -1,16 +1,22 @@
 package com.fct.common.exceptions;
 
+import org.apache.commons.lang3.StringUtils;
+
 /**
  * @author ningyang
  */
-public abstract class BaseException extends RuntimeException {
+public class BaseException extends RuntimeException {
 
     protected int code;
     protected String msg;
     protected String log;
 
     public BaseException() {
+        this(1000, "业务操作过程中发生错误", null);
+    }
 
+    public BaseException(String msg) {
+        this(1000, StringUtils.isEmpty(msg) ? "业务操作过程中发生错误" : msg, null);
     }
 
     public BaseException(int code, String msg) {
